@@ -54,7 +54,7 @@ This directory contains .json files with structural information about the proces
 {
   "3G6D": {                         <- name of the raw structure
     "structure": "_pbee_3G6D",      <- name of the processed structure
-    "partner1": str(),                <- chain ids that belongs to the receptor or ligand (p1)
+    "partner1": str,                <- chain ids that belongs to the receptor or ligand (p1)
     "partner2": str,                <- chain ids that belongs to the receptor or ligand (p2)
     "atoms":    int,                <- number of atoms in the processed structure 
     "ions":     int,                <- number of ions detected in the processed structure
@@ -133,7 +133,7 @@ This directory contains .json files with structural information about the proces
       "R": str
     },
     "seq_p1": {                     <- primary structure content (per chain) of the p1
-      "H": str,               
+      "H": str
     },
     "seq_p2": {                     <- primary structure content (per chain) of the p2
       "A": str
@@ -144,20 +144,20 @@ This directory contains .json files with structural information about the proces
     },
     "dG_exp": float                 <- experimental binding affinity of the complex (p1:p2)
     "rosetta_int_descriptors": {    <- scores and interface descriptors obtained with Rosetta
-      "dslf_fa13": -4.455,
-      "fa_atr": -2821.082,
-      "fa_dun_dev": 79.366,
+      "dslf_fa13":  float,
+      "fa_atr":     float,
+      "fa_dun_dev": float,
       "fa_dun_rot": 263.016,
       "fa_dun_semi": 411.509,
-      "fa_elec": -861.902,
-      "fa_intra_atr_xover4": -153.22,
-      "fa_intra_elec": -131.503,
-      "fa_intra_rep_xover4": 50.461,
-      "fa_intra_sol_xover4": 100.222,
-      "fa_rep": 303.659,
-      "fa_sol": 1873.337,
-      "lk_ball": 1037.579,
-      "lk_ball_bridge": -4.595,
+      "fa_elec":             float,
+      "fa_intra_atr_xover4": float,
+      "fa_intra_elec":       float,
+      "fa_intra_rep_xover4": float,
+      "fa_intra_sol_xover4": float,
+      "fa_rep":              float,
+      "fa_sol":              float,
+      "lk_ball":             float,
+      "lk_ball_bridge":      float,
       "lk_ball_bridge_uncpl": -30.544,
       "lk_ball_iso": -1079.741,
       "hbond_bb_sc": -73.379,
