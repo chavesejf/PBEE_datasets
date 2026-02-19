@@ -7,7 +7,7 @@ Dataset used to train and validate the PBEE pipeline. See publication [here](htt
 ### Step 1:
 
 ```
-wget https://github.com/chavesejf/PBEE_datasets/releases/download/v1.1.0/PBEE_v1.1_dataset.tar.xz
+wget https://github.com/chavesejf/PBEE_datasets/releases/download/v1.1.0/PBEE_v1.1.0_dataset.tar.xz
 ```
 
 ### Step 2:
