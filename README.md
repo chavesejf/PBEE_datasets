@@ -61,7 +61,7 @@ This directory contains .json files with structural information about the proces
     "int_ss_p1": {                    <- secondary structure content of the interface of p1 that interacts with p2
       "helix": "int",                 <- alpha-helix percentage
       "sheet": "int",                 <- beta-sheet percentage
-      "loop":  int                    <- loop percentage
+      "loop":  "int"                  <- loop percentage
     },
     "int_ss_p2": {                    <- secondary structure content of the interface of p2 that interacts with p1
       "helix": "int",                 <- same as int_ss_p1
