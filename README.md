@@ -13,7 +13,7 @@ wget https://github.com/chavesejf/PBEE_datasets/releases/download/v1.1.0/PBEE_v1
 ### Step 2:
 
 ```
-tar -xvJf PBEE_v1.1_dataset.tar.xz
+tar -xvJf PBEE_v1.1.0_dataset.tar.xz
 ```
 
 ### Step 3:
