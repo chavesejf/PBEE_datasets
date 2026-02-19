@@ -1,10 +1,10 @@
 # PBEE dataset
 
-'
+
+```bash
 PBEE_datasets/
-├── v1.1/
-│   ├── input_structures/
+└── v1.1/
+    ├── input_structures/
     ├── processed_structures/
-│   ├── json_files/
-├── classifier/
-'
+    ├── data/
+└── classifier/
