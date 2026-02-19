@@ -1,6 +1,22 @@
 # PBEE dataset
 
-## Download dataset
+## Download dataset and unzip files
+
+### Step 1:
+
+```
+wget https://github.com/chavesejf/PBEE_datasets/releases/download/v1.1.0/PBEE_v1.1_dataset.tar.xz
+```
+
+### Step 2:
+
+```
+tar -xvJf PBEE_v1.1_dataset.tar.xz
+```
+
+### Step 3:
+
+The following 
 
 
 ```bash
@@ -17,5 +33,3 @@ PBEE_datasets/
 │   └── data/
 │       ├── test/
 │       └── train/
-│
-└── classifier/
