@@ -31,7 +31,7 @@ PBEE_datasets/
 │   │   ├── test/
 │   │   └── train/
 │   │
-│   └── 3_data/
+│   └── 2_data/
 │       ├── test/
 │       └── train/
 ```
@@ -46,7 +46,7 @@ This directory contains the raw structures used in the training and testing stag
 
 This directory contains structures that have been processed by the PBEE pipeline.
 
-### 3_data/
+### 2_data/
 
 This directory contains .json files with structural information about the processed structures. Below is a description of the file contents:
 
