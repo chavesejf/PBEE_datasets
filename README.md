@@ -124,7 +124,7 @@ This directory contains .json files with structural information about the proces
       "T": "int",
       "V": "int",
       "W": "int",
-      "Y": int
+      "Y": "int"
     },
     "int_seq_p1": {},                 <- primary structure content (per chain) of the interface of p1 that interacts with p2
     "int_seq_p2": {},                 <- primary structure content (per chain) of the interface of p2 that interacts with p1
