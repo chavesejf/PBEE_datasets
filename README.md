@@ -134,8 +134,8 @@ This directory contains .json files with structural information about the proces
       "pre_processing": "float",
       "post_processing": null
     },
-    "dG_exp":                 "float"         <- experimental binding affinity of the complex (p1:p2)
-    "rosetta_int_descriptors": {              <- scores and interface descriptors obtained with Rosetta
+    "dG_exp":                       "float"     <- experimental binding affinity of the complex (p1:p2)
+    "rosetta_int_descriptors": {                <- scores and interface descriptors obtained with Rosetta
       "dslf_fa13":                  "float",
       "fa_atr":                     "float",
       "fa_dun_dev":                 "float",
@@ -171,7 +171,7 @@ This directory contains .json files with structural information about the proces
       "ifa_dSASA_polar":            "float",
       "ifa_delta_unsatHbonds":      "float",
       "ifa_hbond_E_fraction":       "float",
-      "ifa_hbonds_int":             floa,
+      "ifa_hbonds_int":             "float",
       "ifa_nres_all":               "float",
       "ifa_nres_int":               "float",
       "ifa_packstat":               "float",
