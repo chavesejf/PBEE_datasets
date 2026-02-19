@@ -63,8 +63,8 @@ This directory contains .json files with structural information about the proces
       "sheet": int,                 <- beta-sheet percentage
       "loop":  int                  <- loop percentage
     },
-    "int_ss_p2": {                  <- same as int_ss_p1
-      "helix": int,
+    "int_ss_p2": {                  <- secondary structure content of the interface of p2 that interacts with p1
+      "helix": int,                 <- same as int_ss_p1
       "sheet": int,
       "loop":  int
     },
@@ -75,14 +75,14 @@ This directory contains .json files with structural information about the proces
       "polar_pos": int,             <- percentage of polar positive residues
       "polar_neg": int              <- percentage of polar negative residues
     },
-    "int_restp_p2": {               <- same as int_restp_p1
-      "aromatic":  int,
+    "int_restp_p2": {               <- residue type content of the interface of p2 that interacts with p1
+      "aromatic":  int,             <- same as int_restp_p1
       "neutral":   int,
       "apolar":    int,
       "polar_pos": int,
       "polar_neg": int
     },
-    "int_aa_comp_p1": {             <- amino acid composition of the interface of p1 that interacts with p2
+    "int_aa_comp_p1": {             <- amino acid composition (%) of the interface of p1 that interacts with p2
       "A": int,                     <- total ALA
       "C": int,                     <- "     CYS
       "D": int,                     <- "     ASP
@@ -104,7 +104,7 @@ This directory contains .json files with structural information about the proces
       "W": int,                     <- "     TRP
       "Y": int                      <- "     TYR
     },
-    "int_aa_comp_p2": {             <- same as int_aa_comp_p1
+    "int_aa_comp_p2": {             <- amino acid composition (%) of the interface of p2 that interacts with p1
       "A": int,
       "C": int,
       "D": int,
@@ -126,69 +126,61 @@ This directory contains .json files with structural information about the proces
       "W": int,
       "Y": int
     },
-    "int_seq_p1": {
-      "G": str
-    },
-    "int_seq_p2": {
-      "R": str
-    },
-    "seq_p1": {                     <- primary structure content (per chain) of the p1
-      "H": str
-    },
-    "seq_p2": {                     <- primary structure content (per chain) of the p2
-      "A": str
-    },
+    "int_seq_p1": {},               <- primary structure content (per chain) of the interface of p1 that interacts with p2
+    "int_seq_p2": {},               <- primary structure content (per chain) of the interface of p2 that interacts with p1
+    "seq_p1": {},                   <- primary structure content (per chain) of the p1
+    "seq_p2": {},                   <- primary structure content (per chain) of the p2
     "time": {                       <- time elapsed to complete the stages of the PBE pipeline
       "pre_processing": float,
       "post_processing": null
     },
-    "dG_exp": float                 <- experimental binding affinity of the complex (p1:p2)
+    "dG_exp":                 float <- experimental binding affinity of the complex (p1:p2)
     "rosetta_int_descriptors": {    <- scores and interface descriptors obtained with Rosetta
-      "dslf_fa13":  float,
-      "fa_atr":     float,
-      "fa_dun_dev": float,
-      "fa_dun_rot": 263.016,
-      "fa_dun_semi": 411.509,
-      "fa_elec":             float,
-      "fa_intra_atr_xover4": float,
-      "fa_intra_elec":       float,
-      "fa_intra_rep_xover4": float,
-      "fa_intra_sol_xover4": float,
-      "fa_rep":              float,
-      "fa_sol":              float,
-      "lk_ball":             float,
-      "lk_ball_bridge":      float,
-      "lk_ball_bridge_uncpl": -30.544,
-      "lk_ball_iso": -1079.741,
-      "hbond_bb_sc": -73.379,
-      "hbond_lr_bb": -234.516,
-      "hbond_sc": -64.936,
-      "hbond_sr_bb": -108.057,
-      "hxl_tors": 167.805,
-      "omega": 45.571,
-      "p_aa_pp": -131.677,
-      "rama_prepro": 92.469,
-      "ref": -104.045,
-      "total_score": -1370.059,
-      "cms": 488.145,
-      "ifa_complex_normalized": -2.542,
-      "ifa_dG_cross": 0.0,
-      "ifa_dG_separated": -59.296,
-      "ifa_dSASA_hphobic": 1015.057,
-      "ifa_dSASA_int": 1844.103,
-      "ifa_dSASA_polar": 829.046,
-      "ifa_delta_unsatHbonds": 5,
-      "ifa_hbond_E_fraction": 0.248,
-      "ifa_hbonds_int": 11,
-      "ifa_nres_all": 539,
-      "ifa_nres_int": 63,
-      "ifa_packstat": 0.616,
-      "ifa_per_residue_energy_int": -2.089,
-      "ifa_sc_value": 0.611,
-      "ifa_side1_normalized": -2.275,
-      "ifa_side1_score": -75.059,
-      "ifa_side2_normalized": -1.886,
-      "ifa_side2_score": -56.57
+      "dslf_fa13":                  float,
+      "fa_atr":                     float,
+      "fa_dun_dev":                 float,
+      "fa_dun_rot":                 float,
+      "fa_dun_semi":                float,
+      "fa_elec":                    float,
+      "fa_intra_atr_xover4":        float,
+      "fa_intra_elec":              float,
+      "fa_intra_rep_xover4":        float,
+      "fa_intra_sol_xover4":        float,
+      "fa_rep":                     float,
+      "fa_sol":                     float,
+      "lk_ball":                    float,
+      "lk_ball_bridge":             float,
+      "lk_ball_bridge_uncpl":       float,
+      "lk_ball_iso":                float,
+      "hbond_bb_sc":                float,
+      "hbond_lr_bb":                float,
+      "hbond_sc":                   float,
+      "hbond_sr_bb":                float,
+      "hxl_tors":                   float,
+      "omega":                      float,
+      "p_aa_pp":                    float,
+      "rama_prepro":                float,
+      "ref":                        float,
+      "total_score":                float,
+      "cms":                        float,
+      "ifa_complex_normalized":     float,
+      "ifa_dG_cross":               float,
+      "ifa_dG_separated":           float,
+      "ifa_dSASA_hphobic":          float,
+      "ifa_dSASA_int":              float,
+      "ifa_dSASA_polar":            float,
+      "ifa_delta_unsatHbonds":      float,
+      "ifa_hbond_E_fraction":       float,
+      "ifa_hbonds_int":             floa,
+      "ifa_nres_all":               float,
+      "ifa_nres_int":               float,
+      "ifa_packstat":               float,
+      "ifa_per_residue_energy_int": float,
+      "ifa_sc_value":               float,
+      "ifa_side1_normalized":       float,
+      "ifa_side1_score":            float,
+      "ifa_side2_normalized":       float,
+      "ifa_side2_score":            float
     },
   }
 ```
