@@ -1,4 +1,6 @@
 # PBEE dataset
+Dataset used to train and validate the PBEE pipeline. See publication [here](https://pubs.acs.org/doi/10.1021/acs.jcim.4c01641).
+
 
 ## Download dataset and unzip files
 
