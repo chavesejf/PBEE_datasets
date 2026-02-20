@@ -36,7 +36,6 @@ PBEE_datasets/
 │   └── 2_data/
 │       ├── test/
 │       └── train/
-|   └── _scripts/
 ```
 
 ## Data description
