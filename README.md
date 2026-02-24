@@ -36,7 +36,7 @@ PBEE_datasets/
 │       └── train/
 ```
 
-## Data description (v1.1.0)
+## v1.1.0 - data description
 
 ### 0_input_structures/
 
